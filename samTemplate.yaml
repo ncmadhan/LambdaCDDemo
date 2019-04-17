@@ -11,13 +11,13 @@ Resources:
       Description: 'Lambda function for CD Demo'
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::093833860903:role/MyLambdaRole'
+      Role: 'arn:aws:iam::171928233833:role/LambdaCDExecutionRole'
       Events:
         getAZsAPI:
           Type: Api
           Properties:
-            Path: /getazs
+            Path: /helloworld
             Method: get
       Environment:
         Variables:
-          REGION: ap-southeast-2
+          REGION: ap-south-1
